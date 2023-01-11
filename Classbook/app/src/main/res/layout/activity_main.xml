@@ -6,36 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical">
-<androidx.appcompat.widget.Toolbar
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:minHeight="?actionBarSize"
-    android:theme="?actionBarTheme"
-    android:background="@color/purple">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:minHeight="?actionBarSize"
+        android:theme="?actionBarTheme">
 
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="ClassBook"
-    android:textSize="35sp"
-    android:textColor="@color/white"
-    android:textStyle="bold"
-    android:layout_gravity="center"
-    />
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="+"
-    android:textSize="35sp"
-    android:textColor="@color/white"
-    android:textStyle="bold"
-    android:layout_gravity="end"
-    android:onClick="onClickAdd"
-    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ClassBook"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
 
-</androidx.appcompat.widget.Toolbar>
-<ListView
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="end"-->
+<!--           -->
+<!--            android:text="+"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="35sp"-->
+<!--            android:textStyle="bold" />-->
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:maxWidth="35px"
+            android:maxHeight="35px"
+            android:src="@drawable/plus2"
+            android:onClick="onClickAdd"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
     android:id="@+id/studentList"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
