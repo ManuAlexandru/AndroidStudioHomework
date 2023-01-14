@@ -32,7 +32,7 @@ private TextView name,age,classStudent,attendanceCount;
         System.out.println("dsa "+selectedStudent);
         if(selectedStudent==null)
         {
-            Toast.makeText(getApplicationContext(), "Sorry, we did not find any Student", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Sorry, we did not find any Student", Toast.LENGTH_SHORT).show();
             finish();
         }
         name.setText(selectedStudent.getName());
@@ -47,11 +47,11 @@ if(attendance<14){
 
     selectedStudent.setNrAttendance(++attendance);
     attendanceCount.setText("Attendance: 14/"+attendance);
-    Toast.makeText(getApplicationContext(), "The Student attendance increased by 1", Toast.LENGTH_LONG).show();
+    Toast.makeText(getApplicationContext(), "The Student attendance increased by 1", Toast.LENGTH_SHORT).show();
 }
 
 else
-    Toast.makeText(getApplicationContext(), "The Student already has the maximum attendance allowed", Toast.LENGTH_LONG).show();
+    Toast.makeText(getApplicationContext(), "The Student already has the maximum attendance allowed", Toast.LENGTH_SHORT).show();
     }
 
     public void onClickDecrement(View view){
@@ -60,11 +60,11 @@ else
 
             selectedStudent.setNrAttendance(--attendance);
             attendanceCount.setText("Attendance: 14/"+attendance);
-            Toast.makeText(getApplicationContext(), "The Student attendance decreased by 1", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "The Student attendance decreased by 1", Toast.LENGTH_SHORT).show();
         }
 
         else
-            Toast.makeText(getApplicationContext(), "The Student already has the minimum attendance allowed", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "The Student already has the minimum attendance allowed", Toast.LENGTH_SHORT).show();
     }
 
     public void onClickUpdate(View view){

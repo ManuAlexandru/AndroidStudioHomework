@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Student student=(Student) studentListView.getItemAtPosition(position);
                 Intent intent=new Intent(getApplicationContext(),StudentUpdate.class);
-                Toast.makeText(getApplicationContext(), "Item clicked at position " + student.getId(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Item clicked at position " + student.getId(), Toast.LENGTH_SHORT).show();
 intent.putExtra(Student.StudentEditKey,student.getId());
 startActivity(intent);
             }
