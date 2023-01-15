@@ -21,7 +21,7 @@ public class StudentDetailsActivity extends AppCompatActivity {
         name=findViewById(R.id.inputName);
         age=findViewById(R.id.inputAge);
         classStudent=findViewById(R.id.inputClass);
-       // presenceEdit=findViewById(R.id.);
+
     }
 
     public void onClickSave(View view){

@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
     private ListView studentListView;
    private StudentAdapter studentAdapter;
     @Override
-    protected void onRestart() {
-        super.onRestart();
+    protected void onResume() {
+        super.onResume();
         loadFromDatabase();
         setStudentAdapter();
     }
