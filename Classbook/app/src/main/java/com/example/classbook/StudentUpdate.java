@@ -77,7 +77,7 @@ sqlLiteManager=SqlLiteManager.instanceOfDatabase(this);
 selectedStudent.setName(name.getText().toString());
 selectedStudent.setAge(age.getText().toString());
 selectedStudent.setStudentClass(classStudent.getText().toString());
-
+System.out.println(classStudent.getText().toString());
 sqlLiteManager.UpdateStudent(selectedStudent);
 finish();
     }

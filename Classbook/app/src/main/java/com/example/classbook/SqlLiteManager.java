@@ -84,6 +84,7 @@ public class SqlLiteManager extends SQLiteOpenHelper {
         contentValues.put(id_Student,student.getId());
         contentValues.put(name_Student,student.getName());
         contentValues.put(age_Student,student.getAge());
+        System.out.println(student.getStudentClass());
         contentValues.put(class_Student, student.getStudentClass());
         contentValues.put(nrAttendance_Student, student.getNrAttendance());
         sqLiteDatabase.update(TABLE_NAME_STUDENT,contentValues,id_Student+"=?",new String[]{String.valueOf(student.getId())});

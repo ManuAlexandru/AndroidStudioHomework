@@ -49,8 +49,8 @@ public class Student {
         return StudentClass;
     }
 
-    public void setStudentClass(String StudentClass) {
-        StudentClass = StudentClass;
+    public void setStudentClass(String clasa) {
+        StudentClass = clasa;
     }
 
     public int getNrAttendance() {
